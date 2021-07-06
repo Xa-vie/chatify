@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
@@ -25,6 +26,17 @@ const Channel = ({ user = null }) => {
     }
   }, [inputRef]);
 
+  useEffect(() => {
+    if (bottomListRef.current) {
+      bottomListRef.current.scrollIntoView(
+        {
+          behavior: 'smooth',
+          block: 'end',
+          inline: 'nearest'
+        })
+    }
+  })
+
   const handleOnChange = e => {
     setNewMessage(e.target.value);
   };
@@ -45,7 +57,7 @@ const Channel = ({ user = null }) => {
       // Clear input field
       setNewMessage('');
       // Scroll down to the bottom of the list
-      bottomListRef.current.scrollIntoView({ behavior: 'smooth' });
+      // bottomListRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -71,9 +83,8 @@ const Channel = ({ user = null }) => {
                 <main key={message.id}>
                   <Message {...message} />
                 </main>
-              ))}
+              ))}<span ref={bottomListRef} />
           </ul>
-          <span ref={bottomListRef} />
         </div>
       </div>
       <div className="mb-6 mx-4">
