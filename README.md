@@ -33,7 +33,7 @@ file provides four scripts:
 1. Clone the project repository:
    `git clone https://github.com/Xa-vie/chatify`
 
-2. Navigate to the project folder: `cd react-firechat`
+2. Navigate to the project folder: `cd chatify`
 
 3. Install the dependencies: `npm install`
 
