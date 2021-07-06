@@ -18,7 +18,7 @@ modern React application. This way we can focus on the code itself, and not
 worry about configuring many build tools.
 
 The
-[package.json](https://github.com/Xavier-Xo/chatify/blob/main/package.json)
+[package.json](https://github.com/Xa-vie/chatify/blob/main/package.json)
 file provides four scripts:
 
 - `start`: Runs the app in the development mode.
@@ -31,7 +31,7 @@ file provides four scripts:
 ## Instructions
 
 1. Clone the project repository:
-   `git clone https://github.com/Xavier-Xo/chatify`
+   `git clone https://github.com/Xa-vie/chatify`
 
 2. Navigate to the project folder: `cd react-firechat`
 
