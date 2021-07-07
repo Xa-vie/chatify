@@ -45,8 +45,6 @@ const Message = ({
       <div className={`block w-80 break-words p-2 rounded-md ${messageBodyClass}`}>
         <div className={`flex items-center mb-1  ${shift}`}>
           {/* for time */}
-
-
           {displayName ? (
             <p className="text-primary-500">{displayName}</p>
           ) : null}
@@ -56,16 +54,10 @@ const Message = ({
               {formatDate(new Date(createdAt.seconds * 1000))}
             </span>
           ) : null}
-
-
         </div>
         <div>{text}</div>
       </div>
-
-
-
     </div>
-
   );
 };
 
