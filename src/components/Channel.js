@@ -6,6 +6,8 @@ import { useFirestoreQuery } from '../hooks';
 // Components
 import Message from './Message';
 
+
+
 const Channel = ({ user = null }) => {
   const db = firebase.firestore();
   const messagesRef = db.collection('messages');
@@ -13,12 +15,20 @@ const Channel = ({ user = null }) => {
     messagesRef.orderBy('createdAt', 'desc').limit(100)
   );
 
+
+
   const [newMessage, setNewMessage] = useState('');
 
   const inputRef = useRef();
   const bottomListRef = useRef();
 
   const { uid, displayName, photoURL } = user;
+
+
+
+
+  //
+
 
   useEffect(() => {
     if (inputRef.current) {
