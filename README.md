@@ -8,7 +8,7 @@ CSS. Deployed on Netlify.
 Watch the tutorial on how to build this app from scratch:
 
 Check out the live demo of the final result:
-[https://chatify-x.netlify.app/](https://chatify-x.netlify.app/).
+[https://chatifyyy.netlify.app/](https://chatify-x.netlify.app/).
 
 ## create-react-app
 
